@@ -1,0 +1,120 @@
+open source platform -github and git
+git download
+git --version
+folder create krne ke baad git bash here par click krenge                (linux command to use)
+git status                                            (status of the git repository)
+git init                                              (initialize the git)
+git add .     OR git add -a                (staging)
+git commit -m "version 15"             (saved to be changes into the directory)
+git log                                               (changes to be made by other user)
+git config --global user.name "Raj Gupta"      (change  your name)
+git config --global user.email "Rajgupta1691999@gmail.com"          (change your email)
+git add README.md        Or    git add hello.rb (something to add files)
+git remote add origin https://github.com/.......git
+git push -u origin master
+gti pull origin master
+git pull
+git push origin master
+git add -A                                           (stages all)
+git add .                               (stages new and modified, without deleted)
+git add -all
+git add -p <file>
+git add -u                             (stages modified and deleted, without new)
+git diff utils.txt
+git diff
+git diff --staged utils.txt
+git reset util.txt                     (reset all the things and then checkout)
+git checkout utils.txt
+git checkout .
+git clone https:\\github.com\........
+git clone https:\\github.com\  .
+touch .gitignore
+git rm --cached FILENAME
+                                                        gitignore files to be ignore
+git remote add origin GIT LINK                                                        
+git branch                     (branch ---->master by default) 
+gti branch login-system                  (new branch system)
+gti branch -b <branch name>
+git checkout login-system               (switch to new branch)
+git push origin login-system
+git checkout master                       (added files automatically remove temporarily)
+git merge login-system    (include both master and login-system files then you can do git push -u origin master )  
+git branch -d login system
+git log --prettty=oneline             (one line histories)
+git log --pretty=oneline --max-count=2                                 (controlling which entries are displayed)
+git log --pretty=oneline --since='5 minutes ago'
+git log --pretty=oneline --until='5 minutes ago'
+git log --pretty=oneline --author=<your name>
+git log --pretty=oneline --all
+git log --all --pretty=format:'%h %cd %s (%an)' --since='7 days ago'                 (getting fancy)     
+git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short                                                                                                                                                              (--pretty="..." defines the format of the output.
+                                                                 %h is the abbreviated hash of the commit
+                                                               %d are any decorations on that commit (e.g. branch heads or tags)
+                                                               %ad is the author date
+                                                                %s is the comment
+                                                                %an is the author name
+                                                                --graph informs git to display the commit tree in an ASCII graph layout
+                                                                --date=short keeps the date format nice and short)
+git hist
+git hist master -all
+git tag
+git checkout v1            (checkout tags too)
+git tag v1-beta
+git reset HEAD hello.rb              (reset the staging area)
+git revert HEAD --no-edit            (create a reverting commit)
+git reset --hard v1
+git reset --hard <hash>
+git tag -d oops
+git hist -all
+git commit --amend -m "add an author/email comment"    (amending the commit)
+git mv hello.rb lib    
+git add lib/hello.rb
+git rm hello.rb
+gem install rake
+rake
+ls -C .git
+ls -C .git/objects                             (the object store)
+ls -C .git/objects/<dir>                  (deeper into the object)
+cat .git/config                                  (config file)
+ls .git/refs                                        (branches and tags)
+ls .git/refs/heads
+ls .git/refs/tags
+ls .git/refs/v1
+cat .git/HEAD                               (the Head file)
+git hist --max-count=1                    (finding the latest commit)
+git cat-file -t <hash>                         (dumping the latest commit)
+git cat-file -p <hash>
+git cat-file -p <treehash>                (finding the tree)
+git cat-file -p <libhash>                  (dumping the lib directory)
+git cat-file -p <rbhash>                                     (dumping the hello.rb file)
+go greet              (branch change)
+git rebase master
+git remote show origin
+git remote
+git branch -a                  (list remote branches)
+git branch -av
+git blame <file>
+git fetch
+git merge origin/master     (Merge the fetched changes into local master)
+git branch --track greet origin/greet             (add a local branch that tracks a remote branch)
+git clone --bare hello hello.git                  (create a bare repository)
+git remote add shared ../hello.git               (adding a remote repository)
+git push shared master                               (pushing a change)
+git remote add shared ../hello.git                 (pulling shared changes)
+git branch --track shared master
+git daemon --verbose --export-all --base-path=.         (start up the git server)
+ssh -T git@github.com                 (testing with ssh connection)
+ssh-keygen -p -f ~/.ssh/id_ed25519         (adding or changing passphrase)
+git branch -d login-system
+git push origin --delete login-system
+ssh-keygen -t ed25519 -C "email"               (generate ssh key)
+ssh-keygen -t rsa -b 4096 -C "email"           
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+
+
+
+
+
+
+
